@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Bài 2: Viết chương trình nhập vào 3 cạnh của 1 tam giác. Kiểm tra xem tam giác đó có phải là tam-->
+<!-- giác vuông hay không (gợi ý: sử dụng định lý: Pytago) (10đ)-->
+<script>
+    let canhA=Number(prompt("nhập vào cạnh A"))
+    let canhB=Number(prompt("nhập vào cạnh B"))
+    let canhC=Number(prompt("nhập vào cạnh C"))
+    if (canhA+canhB>canhC && canhB+canhC>canhA && canhA+canhC>canhB){
+        alert("là tam giác")
+        if ((canhA*canhA===canhB*canhB+canhC*canhC)
+        || (canhB*canhB===canhA*canhA+canhC*canhC)
+        || (canhC*canhC === canhA*canhA+canhB*canhB)){
+            alert("3 cạnh bạn nhập là 1 tam giác vuông")
+        }else {
+            alert("3 cạnh bạn nhập không phải là tam giác vuông")
+        }
+    }else {
+        alert("không phải tam giác")
+            }
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>
